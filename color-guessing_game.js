@@ -15,7 +15,7 @@ function runGame() {
 
     //do - while loop for prompt color guessing 
     do {
-        guess = prompt("I am thinking of one of these colors: \n\n" + COLORS_ARRAY.join(", ")+ "\n\n What color am I thinkg of? \n");
+        guess = prompt("I am thinking of one of these colors: \n\n" + COLORS_ARRAY.join(", ")+ "\n\n What color am I thinking of? \n");
         if (guess.toLowerCase() === null) {
             alert ("Please guess a color, Otherwise GameOver")
             return;
@@ -23,7 +23,7 @@ function runGame() {
             numTries += 1; 
             correct = checkGuess(guess,target);
         } while (!correct); //correct will be set to true on correct guess at the end of checkGuess function
-    alert("Congratulations! Your have guessed the color! \n\nIt took you " + numTries + " guesses to finish the game! \n\nHit [OK] to see the clor in the background.\n"); 
+    alert("Congratulations! Your have guessed the color! \n\nIt took you " + numTries + " guesses to finish the game! \n\nHit [OK] to see the color in the background.\n"); 
     document.body.style.background = guess;
     }
 
